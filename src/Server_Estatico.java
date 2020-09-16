@@ -3,8 +3,7 @@
 import java.io.IOException;
 
 import fi.iki.elonen.NanoHTTPD;
-import fi.iki.elonen.NanoHTTPD.IHTTPSession;
-import fi.iki.elonen.NanoHTTPD.Response;
+
 
 
 public class Server_Estatico extends NanoHTTPD{
@@ -19,6 +18,7 @@ public class Server_Estatico extends NanoHTTPD{
 
     @Override
     public Response serve(IHTTPSession session){
-        return newFixedLengthResponse("Hello world");
+        EstructuraJson ej = new EstructuraJson();
+        return newFixedLengthResponse(ej.creaInformacion().toString());
     }
 }
