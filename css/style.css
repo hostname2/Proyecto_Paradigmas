@@ -7,8 +7,8 @@
 body{
     display: flex;
     height: 100%;
-	flex-direction: column;
-    }
+    flex-direction: column;
+}
 
 header{
 	width: 100%;
@@ -112,6 +112,13 @@ main{
     display: none;
 }
 
+.about-content h1{
+    margin: 35px 0;
+    font-size: 40px;
+    color: #111;
+    font-family: sans-serif;
+}
+
 .about-content{
     width: 700px;
     height: 500px;
@@ -120,12 +127,6 @@ main{
     text-align: center;
     padding: 20px;
     position: relative;
-}
-
-.about-content h1{
-    margin: 35px 0;
-    font-size: 40px;
-    color: #111;
 }
 
 .cerrar{
