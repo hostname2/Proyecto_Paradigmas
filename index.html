@@ -4,13 +4,13 @@
       <script src="js/principal.js" type="js/javascript"></script>
 	  <meta charset="utf-8" />
       <title>Proy on Proy on Proy</title>
-	  <title>Segundo titulo jjjj</title>
       <link rel="stylesheet" href="css/style.css">
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" charset="utf-8"></script>
     </head>
-    <body>
+    <body onload="init();">
 		<header>
-			<div class="menu">
-				<button class="btn btn1">Menú</button>
+			<div class="menu" id="menu">
+				
 			</div>
 		</header>
 		<main>
@@ -19,6 +19,13 @@
 			</div>
 			<div class="console-area">
 				<iframe id="preview-window"></iframe>
+			</div>
+			<div class="bg-about">
+				<div class="about-content">
+					<div class="cerrar" id="close"><i class="fas fa-window-close" onclick="ceclose();"></i>
+						<h1>Integrantes</h1>
+					</div>
+				</div>
 			</div>
 		</main>
     </body>
